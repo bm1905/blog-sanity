@@ -7,7 +7,9 @@
   "author": "Bijay Maharjan <bijay.maharjan5@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "sanity start",
+    "build": "sanity build",
+    "start": "node server.js",
+    "start-dev": "sanity start",
     "test": "sanity check"
   },
   "keywords": [
@@ -23,9 +25,12 @@
     "@sanity/desk-tool": "^1.149.16",
     "@sanity/production-preview": "^1.149.0",
     "@sanity/vision": "^1.149.16",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "prop-types": "^15.6",
     "react": "^16.2",
-    "react-dom": "^16.2"
+    "react-dom": "^16.2",
+    "server-static": "^2.0.5"
   },
   "devDependencies": {}
 }
