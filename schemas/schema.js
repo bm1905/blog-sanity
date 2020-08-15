@@ -43,7 +43,8 @@ export default createSchema({
         {
           name: 'subtitle',
           type: 'string',
-          title: 'Subtitle'
+          title: 'Subtitle',
+          validation: (Rule) => { return Rule.required().min(5) }
         },
         {
           name: 'coverImage',
@@ -123,6 +124,12 @@ export default createSchema({
           name: 'slug',
           type: 'slug',
           title: 'Slug',
+          validation: (Rule) => { return Rule.required() }
+        },
+        {
+          name: 'category',
+          type: 'string',
+          title: 'Category',
           validation: (Rule) => { return Rule.required() }
         }
       ]
