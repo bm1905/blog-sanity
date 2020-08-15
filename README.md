@@ -1,9 +1,12 @@
-# Sanity Clean Content Studio
+# Sanity CMS for the blog website 
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+## Starting development setup
 
-Now you can do the following things:
+Inside Next.js project:
+`npm run start-dev`
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+## Configuring Environment Variables
+
+The file `.env.development` on root directory should contain:
+* SANITY_STUDIO_PROJECT_URL=<local host url for development server>
+* SANITY_STUDIO_PREVIEW_SECRET=<secret id for preview>
