@@ -1,4 +1,5 @@
 # Sanity CMS for the blog website 
+[Sanity Blog Editor Website](http://sanity.bmaharjan.com/)
 
 ## Starting development setup
 
