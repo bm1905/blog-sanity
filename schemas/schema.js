@@ -30,6 +30,18 @@ export default createSchema({
       ]
     },
     {
+      name: 'category',
+      type: 'document',
+      title: 'Category',
+      fields: [
+        {
+          name: 'name',
+          type: 'string',
+          title: 'Category'
+        }
+      ]
+    },
+    {
       name: 'blog',
       type: 'document',
       title: 'Blog',
@@ -128,8 +140,9 @@ export default createSchema({
         },
         {
           name: 'category',
-          type: 'string',
+          type: 'reference',
           title: 'Category',
+          to: [{ type: 'category' }],
           validation: (Rule) => { return Rule.required() }
         }
       ]
